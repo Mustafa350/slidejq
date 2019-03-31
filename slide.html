@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"> </script>
+<style>
+
+
+.renkekle{
+  color:blue;
+
+}
+</style>
+
+  </head>
+  <body>
+      <p id="jq1">Jquery Öğreniyroum</p>
+      <p id="jq2">Jquery Öğreniyroum</p>
+
+
+  <button type="button" class="hide">Gizle</button>
+  <button type="button" class="show">Göster</button>
+  <button type="button" class="toggle">Toggle</button>
+  
+
+<script type="text/javascript">
+
+
+
+ $(document).ready(function(){
+  $(".hide").click(function(){
+    $("#jq1,#jq2").slideUp("slow",function(){
+
+    });
+  });
+ });
+
+$(document).ready(function(){
+  $(".show").click(function(){
+    $("#jq1,#jq2").slideDown("slow",function(){
+
+    });
+  });
+  $(".toggle").click(function(){
+    $("#jq1,#jq2").slideToggle(function(){
+
+    });
+  });
+});
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
